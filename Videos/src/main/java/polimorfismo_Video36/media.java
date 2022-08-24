@@ -1,5 +1,5 @@
 
-package Encapsulamineto1_video34;
+package polimorfismo_Video36;
 
 //clase padre
 public class media {
@@ -38,14 +38,18 @@ public class media {
         this.duracion = duracion;
     }
     public void play(){
-        System.out.println("Reproducir "+titulo);
+        printSomething("Reproducir "+titulo);
     }
     public void pausa(){
-        System.out.println("Pausar "+titulo);
+        printSomething("Pausar "+titulo);
+    }
+    
+    private void printSomething( String something ){
+        System.out.println(something);
     }
     
     public void moveForward(int minutos){
-        System.out.println("Adelantar "+ minutos+ "minutos");
+        printSomething("Adelantar "+ minutos+ "minutos");
     }
 
     @Override

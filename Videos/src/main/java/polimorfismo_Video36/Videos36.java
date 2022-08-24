@@ -1,10 +1,11 @@
 
-package Encapsulamineto1_video34;
+package polimorfismo_Video36;
 
-public class Videos34 {
+
+public class Videos36 {
     
 //metodo de herencia se esta utilizando el las clases con la funcion extends
-//y aca esta llamando a la clase padre
+//y aca se esta llamando a la clase padre
 
     
     public static void main(String[] args) {
@@ -32,13 +33,16 @@ public class Videos34 {
         
         StivenFuture.play();*/
         
-        StivenFuture.moveForward();
+        //StivenFuture.moveForward();
         
         media media1 = new media("","",120);
         String titulo = media1.getTitulo();
         String genero = media1.getGenero();
         int duracion = media1.getDuracion();
         
+        //media1.moveForward(15);
+        System.out.println(StarWars.getDuracion());
+        System.out.println(StivenFuture.getDuracion());
     }
     
 }

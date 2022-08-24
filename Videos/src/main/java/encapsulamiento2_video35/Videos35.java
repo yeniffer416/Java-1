@@ -1,10 +1,10 @@
 
-package Encapsulamineto1_video34;
+package encapsulamiento2_video35;
 
-public class Videos34 {
+public class Videos35 {
     
 //metodo de herencia se esta utilizando el las clases con la funcion extends
-//y aca esta llamando a la clase padre
+//y aca se esta llamando a la clase padre
 
     
     public static void main(String[] args) {
@@ -38,6 +38,8 @@ public class Videos34 {
         String titulo = media1.getTitulo();
         String genero = media1.getGenero();
         int duracion = media1.getDuracion();
+        
+        media1.moveForward(15);
         
     }
     

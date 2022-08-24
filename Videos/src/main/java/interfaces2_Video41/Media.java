@@ -1,18 +1,29 @@
 
-package Encapsulamineto1_video34;
-
+package interfaces2_Video41;
 //clase padre
-public class media {
+
+public class Media {
     
     private String titulo;
     private String genero;
     private int duracion;
+    private String synopsis;
+    private String contenido = "";
 
-    public media(String titulo, String genero, int duracion) {
+    public Media(String titulo, String genero, int duracion) {
         this.titulo = titulo;
         this.genero = genero;
         this.duracion = duracion;
     }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
+    }
+    
     
     public String getTitulo() {
         return titulo;
@@ -38,15 +49,24 @@ public class media {
         this.duracion = duracion;
     }
     public void play(){
-        System.out.println("Reproducir "+titulo);
+        printSomething("Reproducir "+titulo);
     }
     public void pausa(){
-        System.out.println("Pausar "+titulo);
+        printSomething("Pausar "+titulo);
+    }
+    
+    private void printSomething( String something ){
+        System.out.println(something);
     }
     
     public void moveForward(int minutos){
-        System.out.println("Adelantar "+ minutos+ "minutos");
+        printSomething("Adelantar "+ minutos+ "minutos");
     }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+    }
+    
 
     @Override
     public String toString() {
